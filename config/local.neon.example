@@ -1,0 +1,13 @@
+#parameters:
+#
+#    database:
+#        host: 127.0.0.1
+#        dbname: stug_app
+#        user: root
+#        password: root
+#        driver: mysqli
+#        port: 3306
+#
+#
+
+
