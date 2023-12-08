@@ -2,20 +2,63 @@ parameters:
 
 
 application:
-	errorPresenter: Error
-	mapping:
-		*: App\*Module\Presenters\*Presenter
+    errorPresenter: Error
+    mapping:
+        *: App\*Module\Presenters\*Presenter
+        Api: App\Api\Presenters\*Presenter
 
-
-latte:
-	strictTypes: yes
+constants:
 
 
 session:
-	expiration: 14 days
+    autoStart: true
+    expiration: 14 days
 
 
 di:
-	export:
-		parameters: no
-		tags: no
+    export:
+        parameters: no
+        tags: no
+
+security:
+    roles:
+        guest:
+        member: [guest]
+        admin: [member]
+
+search:
+    section:
+        in: %appDir%\Model
+        classes:
+            - *Repository
+            - *DataSource
+            - *DataManager
+            - *ProcessManager
+            - *Process
+        tags:
+            - nette.inject
+
+services:
+    - App\Router\RouterFactory::createRouter
+    - App\Forms\FormFactory
+    security.authorizator:
+        setup:
+        - allow(admin)
+        - allow(guest)
+
+
+
+extensions:
+    webpack: Contributte\Webpack\DI\WebpackExtension(%debugMode%, %consoleMode%)
+
+webpack:
+    build:
+        directory: %wwwDir%/assets
+        publicPath: assets/
+    devServer:
+        enabled: %debugMode%
+        url: http://localhost:8080/assets
+
+includes:
+    - nettrine.neon
+    - contributte.neon

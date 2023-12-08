@@ -29,17 +29,14 @@ class ComposerStaticInit371471726cf6a317441d14d0f1a8a245
             'Symfony\\Polyfill\\Intl\\Grapheme\\' => 31,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\Service\\' => 26,
-            'Symfony\\Contracts\\EventDispatcher\\' => 34,
             'Symfony\\Component\\VarExporter\\' => 30,
             'Symfony\\Component\\String\\' => 25,
             'Symfony\\Component\\Stopwatch\\' => 28,
-            'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\Console\\' => 26,
         ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
-            'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
         ),
@@ -51,6 +48,10 @@ class ComposerStaticInit371471726cf6a317441d14d0f1a8a245
             'Nettrine\\DBAL\\' => 14,
             'Nettrine\\Cache\\' => 15,
             'Nettrine\\Annotations\\' => 21,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
         ),
         'D' => 
         array (
@@ -70,12 +71,13 @@ class ComposerStaticInit371471726cf6a317441d14d0f1a8a245
         ),
         'C' => 
         array (
+            'Contributte\\Webpack\\' => 20,
             'Contributte\\Utils\\' => 18,
             'Contributte\\Tracy\\' => 18,
+            'Contributte\\Security\\' => 21,
+            'Contributte\\Monolog\\' => 20,
             'Contributte\\Http\\' => 17,
             'Contributte\\Forms\\' => 18,
-            'Contributte\\Events\\Extra\\' => 25,
-            'Contributte\\EventDispatcher\\' => 28,
             'Contributte\\DI\\' => 15,
             'Contributte\\Console\\Extra\\' => 26,
             'Contributte\\Console\\' => 20,
@@ -122,10 +124,6 @@ class ComposerStaticInit371471726cf6a317441d14d0f1a8a245
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
-        'Symfony\\Contracts\\EventDispatcher\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
-        ),
         'Symfony\\Component\\VarExporter\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-exporter',
@@ -138,10 +136,6 @@ class ComposerStaticInit371471726cf6a317441d14d0f1a8a245
         array (
             0 => __DIR__ . '/..' . '/symfony/stopwatch',
         ),
-        'Symfony\\Component\\EventDispatcher\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
-        ),
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
@@ -149,10 +143,6 @@ class ComposerStaticInit371471726cf6a317441d14d0f1a8a245
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
-        ),
-        'Psr\\EventDispatcher\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
         ),
         'Psr\\Container\\' => 
         array (
@@ -185,6 +175,10 @@ class ComposerStaticInit371471726cf6a317441d14d0f1a8a245
         'Nettrine\\Annotations\\' => 
         array (
             0 => __DIR__ . '/..' . '/nettrine/annotations/src',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'Doctrine\\Persistence\\' => 
         array (
@@ -236,8 +230,12 @@ class ComposerStaticInit371471726cf6a317441d14d0f1a8a245
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/event-manager/src',
-            1 => __DIR__ . '/..' . '/doctrine/common/src',
+            0 => __DIR__ . '/..' . '/doctrine/common/src',
+            1 => __DIR__ . '/..' . '/doctrine/event-manager/src',
+        ),
+        'Contributte\\Webpack\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/webpack/src',
         ),
         'Contributte\\Utils\\' => 
         array (
@@ -247,6 +245,14 @@ class ComposerStaticInit371471726cf6a317441d14d0f1a8a245
         array (
             0 => __DIR__ . '/..' . '/contributte/tracy/src',
         ),
+        'Contributte\\Security\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/security/src',
+        ),
+        'Contributte\\Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/monolog/src',
+        ),
         'Contributte\\Http\\' => 
         array (
             0 => __DIR__ . '/..' . '/contributte/http/src',
@@ -254,14 +260,6 @@ class ComposerStaticInit371471726cf6a317441d14d0f1a8a245
         'Contributte\\Forms\\' => 
         array (
             0 => __DIR__ . '/..' . '/contributte/forms/src',
-        ),
-        'Contributte\\Events\\Extra\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/contributte/event-dispatcher-extra/src',
-        ),
-        'Contributte\\EventDispatcher\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/contributte/event-dispatcher/src',
         ),
         'Contributte\\DI\\' => 
         array (
